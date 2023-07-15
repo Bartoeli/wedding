@@ -1,12 +1,10 @@
 import { Timer } from "@/components/atoms/Timer/Timer";
+import { syne } from "@/styles/fonts";
 import Image from "next/image";
 import React from "react";
-import { Syne } from "next/font/google";
 
 import window from "../../../assets/images/window.png";
 import styles from "./Countdown.module.scss";
-
-const syne = Syne({ subsets: ["latin"], display: "swap", weight: "700" });
 
 export const Countdown: React.FC = () => {
   return (

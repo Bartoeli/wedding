@@ -3,9 +3,15 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Header } from "@/components/pageSections/Header/Header";
 import { Countdown } from "@/components/pageSections/Countdown/Countdown";
-import { Timer } from "@/components/atoms/Timer/Timer";
+import { Greetings } from "@/components/pageSections/Greetings/Greetings";
+import { useGetData } from "@/utils/useGetData";
+import { WhenWhere } from "@/components/pageSections/WhenWhere/WhenWhere";
+import { Schedule } from "@/components/pageSections/Schedule/Schedule";
+import { Accommodation } from "@/components/pageSections/Accommodation/Accommodation";
 
 const Home: NextPage = () => {
+  const data = useGetData();
+
   return (
     <>
       <Head>
@@ -17,6 +23,10 @@ const Home: NextPage = () => {
       <div>
         <Countdown />
         <Header />
+        <Greetings data={data} />
+        <WhenWhere />
+        <Schedule />
+        <Accommodation />
       </div>
     </>
   );

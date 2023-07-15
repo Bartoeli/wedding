@@ -1,15 +1,17 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
-import { DATA } from "./Data";
+import { useEffect, useState } from "react";
+import { DATA, IDataItem } from "./Data";
 
 export const useGetData = () => {
   const pathname = usePathname();
+  const [userData, setUserData] = useState<IDataItem | undefined>();
 
   useEffect(() => {
-    const correctData = DATA.find(({ id }) => id === pathname);
+    const data = DATA.find(({ id }) => id === pathname);
+    setUserData(data);
+  }, [pathname]);
 
-    return correctData;
-  }, []);
+  return userData;
 };

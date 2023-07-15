@@ -1,3 +1,24 @@
 {
-  "hello_msg": "ahoj"
+  "greetings_paragraph": "{{salutation}}, jsme rádi, že s námi strávíte svatební den. Věříme, že to bude skvělý den plný srandy, jídla, pití, tance a že to bude parádní party. Přejeme si, abychom si to společně užili až do rána. Těšíme se na vás a touto formou posíláme info, které by se vám mohlo hodit.",
+  "greetings_paragraph_single": "{{salutation}}, jsme rádi, že s námi strávíš svatební den. Věříme, že to bude skvělý den plný srandy, jídla, pití, tance a že to bude parádní party. Přejeme si, abychom si to společně užili až do rána. Těšíme se na tebe a touto formou posíláme info, které by se ti mohlo hodit.",
+
+  "headline_when": "Kdy",
+  "headline_where": "Kde",
+
+  "schedule_header": "Program",
+  "schedule_item_start": "Příjezd hostů",
+  "schedule_item_ceremony": "Obřad, gratulace",
+  "schedule_item_photoshoot": "Hromadné foto",
+  "schedule_item_lunch": "Proslovy, raut",
+  "schedule_more_items_title": "Dál se můžete těšit na:",
+  "schedule_more_items_title_single": "Dál se můžeš těšit na:",
+  "schedule_item_cake": "Dort",
+  "schedule_item_photo_booth": "Foto koutek",
+  "schedule_item_first_dance": "První tanec",
+  "schedule_item_party": "Party",
+
+  "accommodation_header": "Ubytování",
+  "accommodation_none": "Ubytko nezařizujeme, jak jsem se předem dohodli. Pokud je nějaká změna a ubytko potřebuješ, dej nám vědět.",
+  "accommodation_od": "Máme pro vás zarezervovaný pokoj v hotelu Obecní dům v blízkém okolí Fabriky. Ubytování si prosím uhraďte přímo na místě. Hotel je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který vás dle potřeby přiveze nebo odveze.",
+  "accommodation_sc": "Máme pro vás zarezervovaný pokoj ve Sportovním centru v blízkém okolí Fabriky. Ubytování si prosím uhraďte přímo na místě. Ubytko je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který vás dle potřeby přiveze nebo odveze."
 }

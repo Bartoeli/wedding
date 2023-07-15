@@ -1,13 +1,28 @@
-import { useGetData } from "@/utils/useGetData";
-import { t } from "i18next";
+import { IDataItem } from "@/utils/Data";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-export const Greetings: React.FC = () => {
-  const data = useGetData();
+import styles from "./Greetings.module.scss";
+
+type GreetingsType = {
+  data: IDataItem | undefined;
+};
+
+export const Greetings: React.FC<GreetingsType> = ({ data }) => {
+  const { t } = useTranslation();
+  const text: string = data?.alone
+    ? "greetings_paragraph_single"
+    : "greetings_paragraph";
 
   return (
     <section id="greetings">
-      <div>{t("greetings_paragraph", { salutation: data.salutation })}</div>
+      <div className={styles.greetingsContainer}>
+        <p>
+          {t(text, {
+            salutation: data ? data.salutation : "Milí hosté",
+          })}
+        </p>
+      </div>
     </section>
   );
 };

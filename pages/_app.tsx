@@ -1,19 +1,21 @@
 import type { AppProps } from "next/app";
 import "../styles/sass/main.scss";
 import { appWithTranslation } from "next-i18next";
-import { Roboto_Mono } from "next/font/google";
-
-const roboto = Roboto_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "500",
-});
+import { Client, HydrationProvider, Server } from "react-hydration-provider";
+import { roboto } from "@/styles/fonts";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={roboto.className}>
-      <Component {...pageProps} />
-    </main>
+    <HydrationProvider>
+      <main className={roboto.className}>
+        <Server>
+          <div>loader</div>
+        </Server>
+        <Client>
+          <Component {...pageProps} />
+        </Client>
+      </main>
+    </HydrationProvider>
   );
 }
 
