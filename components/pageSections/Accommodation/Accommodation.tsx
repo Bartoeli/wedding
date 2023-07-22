@@ -1,30 +1,87 @@
 import { H2 } from "@/components/atoms/H2/H2";
-import { useGetData } from "@/utils/useGetData";
-import React, { useEffect } from "react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export const Accommodation: React.FC = () => {
+import styles from "./Accommodation.module.scss";
+import accomRight from "../../../assets/flowers/accomRight.png";
+import { IDataItem } from "@/utils/Data";
+
+type AccommodationType = {
+  data: IDataItem | undefined;
+};
+
+export const Accommodation: React.FC<AccommodationType> = ({ data }) => {
   const { t } = useTranslation();
-  const data = useGetData();
-  let accommodation;
+  const [accommodation, setAccommodation] = useState<string>(
+    "accommodation_general",
+  );
+  const [address, setAddress] = useState<string>("");
+  const [checkin, setCheckin] = useState<string>("");
+  const [price, setPrice] = useState<string>("");
 
   useEffect(() => {
-    if (data?.accom === "no") {
-      accommodation = "accommodation_none";
+    if (data?.accom === "ne") {
+      setAccommodation(
+        data?.alone ? "accommodation_none_single" : "accommodation_none",
+      );
     } else if (data?.accom === "od") {
-      accommodation = "accommodation_od";
+      setAccommodation(
+        data?.alone ? "accommodation_od_single" : "accommodation_od",
+      );
+      setAddress("accommodation_address_od");
+      setCheckin("accommodation_checkin_od");
+      setPrice("accommodation_price_od");
     } else if (data?.accom === "sc") {
-      accommodation = "accommodation_sc";
+      setAccommodation(
+        data?.alone ? "accommodation_sc_single" : "accommodation_sc",
+      );
+      setAddress("accommodation_address_sc");
+      setCheckin("accommodation_checkin_sc");
+      setPrice("accommodation_price_sc");
     } else if (data?.accom === "spalov") {
-      accommodation = "accommodation_spalov";
+      setAccommodation(
+        data?.alone ? "accommodation_spalov_single" : "accommodation_spalov",
+      );
+      setAddress("accommodation_address_spalov");
+      setCheckin("accommodation_checkin_spalov");
+      setPrice("accommodation_price_spalov");
     }
-  }, []);
+  }, [data?.accom, data?.alone]);
+
+  console.log("accommodation", accommodation);
 
   return (
     <section id="accommodation">
       <H2 text="accommodation_header" />
       <div>
-        <p>{t(accommodation ? accommodation : "accommodation_general")}</p>
+        <p>{t(accommodation)}</p>
+      </div>
+      {data?.accom === ("od" || "sc" || "spalov") && (
+        <div>
+          <p>
+            {t("accommodation_address")}: {t(address)}
+          </p>
+          <p>
+            {t("accommodation_checkin")}
+            {data?.friday && "Pátek 4.8., "}
+            {t(checkin)}
+          </p>
+          <p>
+            {t("accommodation_price")}
+            {t(price)}
+          </p>
+        </div>
+      )}
+      <div className={styles.imageSection}>
+        <div className={styles.imageContainer}>
+          <Image
+            alt="flower"
+            src={accomRight}
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
       </div>
     </section>
   );

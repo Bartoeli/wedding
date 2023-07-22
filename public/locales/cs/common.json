@@ -18,7 +18,40 @@
   "schedule_item_party": "Party",
 
   "accommodation_header": "Ubytování",
-  "accommodation_none": "Ubytko nezařizujeme, jak jsem se předem dohodli. Pokud je nějaká změna a ubytko potřebuješ, dej nám vědět.",
+  "accommodation_general": "Ubytování je od nás pravděpodobně zařízené. Pro jistotu se nám ale ozvi, ať si to potvrdíme a dáme ti konkrétní info.",
+  "accommodation_none_single": "Ubytko ti nezařizujeme, jak jsem se předem dohodli. Pokud je nějaká změna a ubytko potřebuješ, dej nám vědět.",
+  "accommodation_none": "Ubytko vám nezařizujeme, jak jsem se předem dohodli. Pokud je nějaká změna a ubytko potřebujete, dejte nám vědět.",
+  "accommodation_od_single": "Máme pro tebe zarezervovaný pokoj v hotelu Obecní dům v blízkém okolí Fabriky. Ubytování si prosím uhraď přímo na místě. Hotel je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který tě dle potřeby přiveze nebo odveze.",
   "accommodation_od": "Máme pro vás zarezervovaný pokoj v hotelu Obecní dům v blízkém okolí Fabriky. Ubytování si prosím uhraďte přímo na místě. Hotel je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který vás dle potřeby přiveze nebo odveze.",
-  "accommodation_sc": "Máme pro vás zarezervovaný pokoj ve Sportovním centru v blízkém okolí Fabriky. Ubytování si prosím uhraďte přímo na místě. Ubytko je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který vás dle potřeby přiveze nebo odveze."
+  "accommodation_sc_single": "Máme pro tebe zarezervovaný pokoj ve Sportovním centru Semily v blízkém okolí Fabriky. Ubytování si prosím uhraď přímo na místě. Ubytko je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který tě dle potřeby přiveze nebo odveze.",
+  "accommodation_sc": "Máme pro vás zarezervovaný pokoj ve Sportovním centru Semily v blízkém okolí Fabriky. Ubytování si prosím uhraďte přímo na místě. Ubytko je v dochozí vzdálenosti, nicméně po celý den (a noc) bude k dispozici řidič, který vás dle potřeby přiveze nebo odveze.",
+  "accommodation_spalov_single": "Máme pro tebe zarezervované ubytko v hotelu Spálov. Hotel je mimo Semily, ale po celý den (a noc) bude k dispozici řidič, který tě podle potřeby odveze nebo přiveze. Ubytování si prosím uhraď přímo na místě.",
+  "accommodation_spalov": "Máme pro vás zarezervované ubytko v hotelu Spálov. Hotel je mimo Semily, ale po celý den (a noc) bude k dispozici řidič, který vás podle potřeby odveze nebo přiveze. Ubytování si prosím uhraďte přímo na místě.",
+  "accommodation_address": "Adresa",
+  "accommodation_address_od": "Husova 70, Semily, 513 01",
+  "accommodation_address_sc": "3. května 327, 513 01 Semily",
+  "accommodation_address_spalov": "Spálov 27, 513 01 Semily",
+  "accommodation_checkin": "Check-in: ",
+  "accommodation_checkin_od": "12:30 Je možné jim zavolat na telefonní číslo 481 621 044 a zjistit, jestli pokoj nebude připravený dřív.",
+  "accommodation_checkin_sc": "DOPLNIT",
+  "accommodation_checkin_spalov": "11:00",
+  "accommodation_price": "Cena: ",
+  "accommodation_price_od": "",
+  "accommodation_price_sc": "600 Kč / osoba / noc",
+  "accommodation_price_spalov": "dvoulůžkový pokoj: 1.200 Kč za noc, apartmán: 2.800 Kč za noc",
+
+  "parking_header": "Doprava a parkování",
+  "parking_info": "Přímo před fabrikou je velké oplocené parkoviště, kde je možné nechat auto zaparkované i přes noc. Ze Sportovního centra a hotelu Obecní dům se k autu dostanete pěšky. Pokud byste chtěli k autu dovézt, domluvíme se na místě. Ze Spálova můžete vzájemně posharovat dopravu v sobotu i v neděli, nebo pro vás dojedeme.",
+
+  "gifts_header": "Dary",
+  "gifts_info": "Pokud nás chcete obdarovat, budeme rádi za příspěvek na naši svatební cestu. Také oceníme nabídku hlídání Ginny nebo krmení králíka během naší svatební cesty.",
+
+  "what_to_wear_header": "Co na sebe",
+  "what_to_wear_info": "Přijďte v tom, co je vám pohodlné a co se hodí pro náš výjimečný životní moment. Pokud se budete chtít během dne převléknout, bude k tomu vyhrazen ve Fabrice prostor. Věci na převlečení si můžete vzít s sebou, nebo je nechat v autě. Na barvách nelpíme, ale pokud byste nám chtěli udělat radost, volte pastelové a tlumené barvy.",
+
+  "forbidden_header": "Co nechat doma",
+  "forbidden_info": "Děti, psy, drogy (hulení taky), kraťasy, ponožky v sandálech a lakýrky bez ponožek.",
+
+  "contacts_header": "Kontakty",
+  "contacts_info": "Tady jsou kontakty na důležité osoby. Lianna je naše koordinátorka a Lukáš je zástupce Fabriky, který nám s organizací také pomáhá."
 }

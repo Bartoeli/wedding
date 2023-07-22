@@ -6,6 +6,8 @@ import { DATA, IDataItem } from "./Data";
 
 export const useGetData = () => {
   const pathname = usePathname();
+  console.log("pathname", pathname);
+
   const [userData, setUserData] = useState<IDataItem | undefined>();
 
   useEffect(() => {
