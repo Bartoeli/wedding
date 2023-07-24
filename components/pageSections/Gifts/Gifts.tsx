@@ -3,14 +3,14 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
 import { H2 } from "@/components/atoms/H2/H2";
-import accomRight from "../../../assets/flowers/accomRight.png";
+import whenWhereFlower from "../../../assets/flowers/whenWhereRight.png";
 import styles from "./Gifts.module.scss";
 
 export const Gifts: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="gifts">
+    <section id="gifts" className={styles.gifts}>
       <H2 text="gifts_header" />
       <div>
         <p>{t("gifts_info")}</p>
@@ -19,7 +19,7 @@ export const Gifts: React.FC = () => {
         <div className={styles.imageContainer}>
           <Image
             alt="flower"
-            src={accomRight}
+            src={whenWhereFlower}
             fill
             style={{ objectFit: "contain" }}
           />

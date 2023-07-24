@@ -6,7 +6,7 @@ import styles from "./WhenWhere.module.scss";
 
 export const WhenWhere: React.FC = () => {
   return (
-    <section id="when-where">
+    <section id="when-where" className={styles.whenWhere}>
       <div className={styles.whenWhereContainer}>
         <div className={styles.when}>
           <H2 text="headline_when" />

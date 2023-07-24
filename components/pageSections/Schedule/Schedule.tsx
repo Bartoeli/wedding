@@ -93,7 +93,7 @@ export const Schedule: React.FC = () => {
   const alone = user?.alone;
 
   return (
-    <section id="schedule">
+    <section id="schedule" className={styles.schedule}>
       <H2 text="schedule_header" />
       <div className={styles.scheduledItemsContainer}>
         {SCHEDULED_ITEMS.map((item, index) => (

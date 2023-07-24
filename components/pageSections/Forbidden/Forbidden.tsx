@@ -10,7 +10,7 @@ export const Forbidden: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="forbidden">
+    <section id="forbidden" className={styles.forbidden}>
       <H2 text="forbidden_header" />
       <div>
         <p>{t("forbidden_info")}</p>

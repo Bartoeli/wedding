@@ -10,7 +10,7 @@ export const WhatToWear: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="whatToWear">
+    <section id="whatToWear" className={styles.whatToWear}>
       <H2 text="what_to_wear_header" />
       <div>
         <p>{t("what_to_wear_info")}</p>

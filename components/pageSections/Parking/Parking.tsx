@@ -10,7 +10,7 @@ export const Parking: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="parking">
+    <section id="parking" className={styles.parking}>
       <H2 text="parking_header" />
       <div>
         <p>{t("parking_info")}</p>

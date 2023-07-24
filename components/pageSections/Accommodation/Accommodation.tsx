@@ -52,7 +52,7 @@ export const Accommodation: React.FC<AccommodationType> = ({ data }) => {
   console.log("accommodation", accommodation);
 
   return (
-    <section id="accommodation">
+    <section id="accommodation" className={styles.accommodation}>
       <H2 text="accommodation_header" />
       <div>
         <p>{t(accommodation)}</p>
