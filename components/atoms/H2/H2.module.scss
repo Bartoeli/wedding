@@ -1,6 +1,26 @@
+@import "../../../styles/sass/variables.scss";
+
 .header2 {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .header2 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .header2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: $layout-breakpoint-large) {
+  .header2 {
+    font-size: 40px;
+  }
 }

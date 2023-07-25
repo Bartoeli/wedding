@@ -12,6 +12,8 @@ import cake from "../../../assets/icons/cake.png";
 import cheers from "../../../assets/icons/cheers.png";
 import styles from "./Schedule.module.scss";
 import scheduleLeft from "../../../assets/flowers/scheduleLeft.png";
+import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
+import { Flower } from "@/components/atoms/Flower/Flower";
 
 export interface IScheduledItem {
   time: string;
@@ -94,32 +96,26 @@ export const Schedule: React.FC = () => {
 
   return (
     <section id="schedule" className={styles.schedule}>
-      <H2 text="schedule_header" />
-      <div className={styles.scheduledItemsContainer}>
-        {SCHEDULED_ITEMS.map((item, index) => (
-          <ScheduledItem data={item} key={index} />
-        ))}
-      </div>
-      <div className={styles.imageSection}>
-        <div className={styles.imageContainer}>
-          <Image
-            alt="flower"
-            src={scheduleLeft}
-            fill
-            style={{ objectFit: "contain" }}
-          />
+      <SectionWrapper>
+        <H2 text="schedule_header" />
+        <div className={styles.scheduledItemsContainer}>
+          {SCHEDULED_ITEMS.map((item, index) => (
+            <ScheduledItem data={item} key={index} />
+          ))}
         </div>
-      </div>
-      <p>
-        {alone
-          ? t("schedule_more_items_title_single")
-          : t("schedule_more_items_title")}
-      </p>
-      <div className={styles.unscheduledItemsContainer}>
-        {UNSCHEDULED_ITEMS.map((item, index) => (
-          <UnscheduledItem data={item} key={index} />
-        ))}
-      </div>
+
+        <p className={styles.more}>
+          {alone
+            ? t("schedule_more_items_title_single")
+            : t("schedule_more_items_title")}
+        </p>
+        <div className={styles.unscheduledItemsContainer}>
+          {UNSCHEDULED_ITEMS.map((item, index) => (
+            <UnscheduledItem data={item} key={index} />
+          ))}
+        </div>
+      </SectionWrapper>
+      <Flower left source={scheduleLeft} />
     </section>
   );
 };

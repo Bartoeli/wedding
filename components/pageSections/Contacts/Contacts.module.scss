@@ -1,3 +1,36 @@
-.contacts {
-  margin-bottom: 100px;
+@import "../../../styles/sass/variables.scss";
+
+.infoContainer {
+  margin-bottom: 50px;
+}
+
+.photoContainer {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.phoneContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.phoneNumber {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .phoneNumber {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-large) {
+  .phoneNumber {
+    font-size: 16px;
+  }
 }

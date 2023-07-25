@@ -13,6 +13,7 @@ import { WhatToWear } from "@/components/pageSections/WhatToWear/WhatToWear";
 import { Forbidden } from "@/components/pageSections/Forbidden/Forbidden";
 import { Contacts } from "@/components/pageSections/Contacts/Contacts";
 import { BottomSection } from "@/components/pageSections/BottomSection/BottomSection";
+import { Breakfast } from "@/components/pageSections/Breakfast/Breakfast";
 
 const Mamkam: NextPage = () => {
   const data = useGetData();
@@ -29,6 +30,7 @@ const Mamkam: NextPage = () => {
       <Gifts />
       <WhatToWear />
       <Forbidden />
+      <Breakfast />
       <Contacts />
       <BottomSection />
     </>

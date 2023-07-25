@@ -51,7 +51,7 @@ export const DATA: IDataItem[] = [
     friday: true,
   },
   { id: "/adamosbara", salutation: "Báro a Adame", accom: "sc", alone: false },
-  { id: "wenigovic", salutation: "Kačko a Johnny", accom: "sc", alone: false },
+  { id: "/wenigovic", salutation: "Kačko a Johnny", accom: "sc", alone: false },
   {
     id: "/mlejnkovi",
     salutation: "Milí Mlejnkovi",

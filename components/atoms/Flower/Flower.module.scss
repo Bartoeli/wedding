@@ -1,0 +1,46 @@
+@import "../../../styles/sass/variables.scss";
+
+.flowerSection {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.rightFlowerContainer {
+  position: absolute;
+  height: 183px;
+  width: 100px;
+  right: 0px;
+  top: -120px;
+}
+
+.leftFlowerContainer {
+  position: absolute;
+  height: 183px;
+  width: 100px;
+  left: 0px;
+  top: -120px;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .rightFlowerContainer {
+    width: 170px;
+    height: 260px;
+  }
+
+  .leftFlowerContainer {
+    width: 170px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-large) {
+  .rightFlowerContainer {
+    width: 183px;
+    height: 347px;
+  }
+
+  .leftFlowerContainer {
+    width: 283px;
+    height: 247px;
+  }
+}

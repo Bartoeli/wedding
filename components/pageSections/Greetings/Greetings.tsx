@@ -1,3 +1,4 @@
+import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
 import { IDataItem } from "@/utils/Data";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -16,13 +17,15 @@ export const Greetings: React.FC<GreetingsType> = ({ data }) => {
 
   return (
     <section id="greetings">
-      <div className={styles.greetingsContainer}>
-        <p>
-          {t(text, {
-            salutation: data ? data.salutation : "Milí hosté",
-          })}
-        </p>
-      </div>
+      <SectionWrapper>
+        <div className={styles.greetingsContainer}>
+          <p>
+            {t(text, {
+              salutation: data ? data.salutation : "Milí hosté",
+            })}
+          </p>
+        </div>
+      </SectionWrapper>
     </section>
   );
 };

@@ -1,0 +1,28 @@
+@import "../../../styles/sass/variables.scss";
+
+.sectionWrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .sectionWrapper {
+    max-width: 750px;
+    margin-bottom: 130px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-large) {
+  .sectionWrapper {
+    max-width: 750px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-xlarge) {
+  .sectionWrapper {
+    max-width: 850px;
+    margin-bottom: 240px;
+  }
+}

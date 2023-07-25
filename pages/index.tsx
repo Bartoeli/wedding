@@ -13,6 +13,8 @@ import { Gifts } from "@/components/pageSections/Gifts/Gifts";
 import { WhatToWear } from "@/components/pageSections/WhatToWear/WhatToWear";
 import { Forbidden } from "@/components/pageSections/Forbidden/Forbidden";
 import { Contacts } from "@/components/pageSections/Contacts/Contacts";
+import { Breakfast } from "@/components/pageSections/Breakfast/Breakfast";
+import { BottomSection } from "@/components/pageSections/BottomSection/BottomSection";
 
 const Home: NextPage = () => {
   const data = useGetData();
@@ -36,7 +38,9 @@ const Home: NextPage = () => {
         <Gifts />
         <WhatToWear />
         <Forbidden />
+        <Breakfast />
         <Contacts />
+        <BottomSection />
       </div>
     </>
   );

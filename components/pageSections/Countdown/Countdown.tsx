@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import window from "../../../assets/images/window.png";
+import windows from "../../../assets/images/3windows.png";
 import styles from "./Countdown.module.scss";
 import scroll from "../../../assets/icons/scroll.gif";
 
@@ -12,10 +13,18 @@ export const Countdown: React.FC = () => {
     <section id="countdown" className={syne.className}>
       <div className={styles.countdown}>
         <div className={styles.countdownContainer}>
-          <div className={styles.countdownImageContainer}>
+          <div className={styles.oneWindowContainer}>
             <Image
               alt="factory window"
               src={window}
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+          <div className={styles.threeWindowsContainer}>
+            <Image
+              alt="factory windows"
+              src={windows}
               fill
               style={{ objectFit: "contain" }}
             />

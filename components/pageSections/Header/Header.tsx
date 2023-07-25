@@ -5,13 +5,16 @@ import styles from "./Header.module.scss";
 import logo from "../../../assets/images/mainLogo.png";
 import leftFlower from "../../../assets/flowers/headerLeft.png";
 import rightFlower from "../../../assets/flowers/headerRight.png";
+import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
+import { Placeholder } from "@/components/atoms/Placeholder/Placeholder";
 
 export interface IHeader {}
 
 export const Header: React.FC<IHeader> = () => {
   return (
     <section id="header">
-      <div className={styles.headerContainer}>
+      <SectionWrapper>
+        <Placeholder height={150} />
         <div className={styles.headerMainImageContainer}>
           <Image
             alt="wedding logo"
@@ -41,7 +44,7 @@ export const Header: React.FC<IHeader> = () => {
             />
           </div>
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 };

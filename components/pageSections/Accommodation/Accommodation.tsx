@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import styles from "./Accommodation.module.scss";
 import accomRight from "../../../assets/flowers/accomRight.png";
 import { IDataItem } from "@/utils/Data";
+import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
+import { Flower } from "@/components/atoms/Flower/Flower";
 
 type AccommodationType = {
   data: IDataItem | undefined;
@@ -52,37 +54,29 @@ export const Accommodation: React.FC<AccommodationType> = ({ data }) => {
   console.log("accommodation", accommodation);
 
   return (
-    <section id="accommodation" className={styles.accommodation}>
-      <H2 text="accommodation_header" />
-      <div>
-        <p>{t(accommodation)}</p>
-      </div>
-      {data?.accom === ("od" || "sc" || "spalov") && (
-        <div>
-          <p>
-            {t("accommodation_address")}: {t(address)}
-          </p>
-          <p>
-            {t("accommodation_checkin")}
-            {data?.friday && "Pátek 4.8., "}
-            {t(checkin)}
-          </p>
-          <p>
-            {t("accommodation_price")}
-            {t(price)}
-          </p>
+    <section id="accommodation">
+      <SectionWrapper>
+        <H2 text="accommodation_header" />
+        <div style={{ marginBottom: "30px" }}>
+          <p>{t(accommodation)}</p>
         </div>
-      )}
-      <div className={styles.imageSection}>
-        <div className={styles.imageContainer}>
-          <Image
-            alt="flower"
-            src={accomRight}
-            fill
-            style={{ objectFit: "contain" }}
-          />
-        </div>
-      </div>
+        {data?.accom !== "ne" && (
+          <div>
+            <p>
+              {t("accommodation_address")}: {t(address)}
+            </p>
+            <p>
+              {t("accommodation_checkin")}
+              {data?.friday ? "Pátek 4.8." : t(checkin)}
+            </p>
+            <p>
+              {t("accommodation_price")}
+              {t(price)}
+            </p>
+          </div>
+        )}
+      </SectionWrapper>
+      <Flower left={false} source={accomRight} />
     </section>
   );
 };

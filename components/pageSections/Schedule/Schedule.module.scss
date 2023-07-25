@@ -1,6 +1,4 @@
-.schedule {
-  margin-bottom: 60px;
-}
+@import "../../../styles/sass/variables.scss";
 
 .scheduledItemsContainer {
   display: flex;
@@ -30,19 +28,9 @@
   margin: 10px auto;
 }
 
-.imageSection {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 30px;
-}
-
-.imageContainer {
-  position: absolute;
-  height: 183px;
-  width: 100px;
-  left: -10px;
-  top: -70px;
+.more {
+  margin-top: 60px;
+  text-align: center;
 }
 
 .unscheduledItemsContainer {
@@ -54,4 +42,24 @@
 .unscheduledItemContainer {
   width: 45%;
   margin: 20px auto;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .scheduledItemsContainer {
+    flex-wrap: nowrap;
+  }
+
+  .unscheduledItemsContainer {
+    flex-wrap: nowrap;
+  }
+
+  .more {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .more {
+    text-align: left;
+  }
 }

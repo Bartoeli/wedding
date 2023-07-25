@@ -1,3 +1,5 @@
+@import "../../../styles/sass/variables.scss";
+
 .countdown {
   height: 100vh;
   width: 100%;
@@ -10,12 +12,16 @@
   display: flex;
 }
 
-.countdownImageContainer {
+.oneWindowContainer {
   position: relative;
   width: 50%;
   height: 190px;
   margin: 0 auto;
   align-self: center;
+}
+
+.threeWindowsContainer {
+  display: none;
 }
 
 .timerContainer {
@@ -37,4 +43,32 @@
   border: 0px;
   background-color: transparent;
   margin: 0 auto;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .oneWindowContainer {
+    display: none;
+  }
+
+  .threeWindowsContainer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 190px;
+    align-self: center;
+  }
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .threeWindowsContainer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 395px;
+    align-self: center;
+  }
+
+  .timerContainer {
+    font-size: 64px;
+  }
 }
