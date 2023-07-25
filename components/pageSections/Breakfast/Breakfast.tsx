@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
 
 import { H2 } from "@/components/atoms/H2/H2";
 import scheduleLeft from "../../../assets/flowers/scheduleLeft.png";

@@ -3,8 +3,6 @@ import { IDataItem } from "@/utils/Data";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import styles from "./Greetings.module.scss";
-
 type GreetingsType = {
   data: IDataItem | undefined;
 };
@@ -18,7 +16,7 @@ export const Greetings: React.FC<GreetingsType> = ({ data }) => {
   return (
     <section id="greetings">
       <SectionWrapper>
-        <div className={styles.greetingsContainer}>
+        <div>
           <p>
             {t(text, {
               salutation: data ? data.salutation : "Milí hosté",

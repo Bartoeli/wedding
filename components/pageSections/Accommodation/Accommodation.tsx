@@ -1,9 +1,7 @@
 import { H2 } from "@/components/atoms/H2/H2";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import styles from "./Accommodation.module.scss";
 import accomRight from "../../../assets/flowers/accomRight.png";
 import { IDataItem } from "@/utils/Data";
 import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";

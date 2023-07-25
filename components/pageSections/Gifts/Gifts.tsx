@@ -1,10 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
 
 import { H2 } from "@/components/atoms/H2/H2";
 import whenWhereFlower from "../../../assets/flowers/whenWhereRight.png";
-import styles from "./Gifts.module.scss";
 import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
 import { Flower } from "@/components/atoms/Flower/Flower";
 
