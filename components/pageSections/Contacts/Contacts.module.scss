@@ -1,5 +1,10 @@
 @import "../../../styles/sass/variables.scss";
 
+.name {
+  text-align: center;
+  font-size: 18px;
+}
+
 .infoContainer {
   margin-bottom: 50px;
 }
@@ -8,12 +13,14 @@
   width: 250px;
   height: 250px;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .phoneContainer {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .phoneNumber {
@@ -24,12 +31,30 @@
 }
 
 @media (min-width: $layout-breakpoint-medium) {
+  .contentContainer {
+    display: flex;
+  }
+
+  .name {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .phoneContainer {
+    justify-content: start;
+  }
+
   .phoneNumber {
     font-size: 14px;
+    text-align: left;
   }
 }
 
 @media (min-width: $layout-breakpoint-large) {
+  .name {
+    font-size: 24px;
+  }
+
   .phoneNumber {
     font-size: 16px;
   }

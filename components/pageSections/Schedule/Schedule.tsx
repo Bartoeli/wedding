@@ -10,6 +10,8 @@ import camera from "../../../assets/icons/camera.png";
 import cutlery from "../../../assets/icons/cutlery.png";
 import cake from "../../../assets/icons/cake.png";
 import cheers from "../../../assets/icons/cheers.png";
+import photoshoot from "../../../assets/icons/photoshoot.png";
+import dance from "../../../assets/icons/dance.png";
 import styles from "./Schedule.module.scss";
 import scheduleLeft from "../../../assets/flowers/scheduleLeft.png";
 import { SectionWrapper } from "@/components/atoms/SectionWrapper/SectionWrapper";
@@ -29,14 +31,14 @@ export interface IUnscheduledItem {
 const SCHEDULED_ITEMS: IScheduledItem[] = [
   { time: "12:00", icon: partyFlag, label: "schedule_item_start" },
   { time: "13:00", icon: rings, label: "schedule_item_ceremony" },
-  { time: "13:50", icon: camera, label: "schedule_item_photoshoot" },
+  { time: "13:50", icon: photoshoot, label: "schedule_item_photoshoot" },
   { time: "14:00", icon: cutlery, label: "schedule_item_lunch" },
 ];
 
 const UNSCHEDULED_ITEMS: IUnscheduledItem[] = [
   { icon: cake, label: "schedule_item_cake" },
   { icon: camera, label: "schedule_item_photo_booth" },
-  { icon: camera, label: "schedule_item_first_dance" },
+  { icon: dance, label: "schedule_item_first_dance" },
   { icon: cheers, label: "schedule_item_party" },
 ];
 

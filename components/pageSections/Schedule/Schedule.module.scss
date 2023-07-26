@@ -15,6 +15,7 @@
 .labelContainer {
   max-width: 60px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .p {
@@ -61,5 +62,9 @@
 @media (min-width: $layout-breakpoint-medium) {
   .more {
     text-align: left;
+  }
+
+  .labelContainer {
+    max-width: 100px;
   }
 }

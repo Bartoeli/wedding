@@ -14,21 +14,27 @@ export const Contacts: React.FC = () => {
     <section id="contacts">
       <SectionWrapper>
         <H2 text="contacts_header" />
-        <div className={styles.infoContainer}>
-          <p>{t("contacts_info")}</p>
-        </div>
-        <div className={styles.photoContainer}>
-          <Image
-            alt="wedding coordinator"
-            src={liana}
-            width={250}
-            height={250}
-            style={{ objectFit: "contain" }}
-          />
-          <div className={styles.phoneContainer}>
-            <a href="tel:+420608425066" className={styles.phoneNumber}>
-              +420 608 425 066
-            </a>
+
+        <div className={styles.contentContainer}>
+          <div className={styles.photoContainer}>
+            <Image
+              alt="wedding coordinator"
+              src={liana}
+              width={250}
+              height={250}
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+          <div>
+            <p className={styles.name}>Liana</p>
+            <div className={styles.phoneContainer}>
+              <a href="tel:+420608425066" className={styles.phoneNumber}>
+                +420 608 425 066
+              </a>
+            </div>
+            <div className={styles.infoContainer}>
+              <p>{t("contacts_info")}</p>
+            </div>
           </div>
         </div>
       </SectionWrapper>
