@@ -12,12 +12,12 @@ export const WhenWhere: React.FC = () => {
       <SectionWrapper>
         <div className={styles.whenWhereContainer}>
           <div className={styles.when}>
-            <H2 text="headline_when" />
+            <H2 text="headline_when" myStyle={{ textAlign: "center" }} />
             <p className={styles.p}>5/8/2023</p>
             <p className={styles.p}>12:00</p>
           </div>
           <div className={styles.where}>
-            <H2 text="headline_where" />
+            <H2 text="headline_where" myStyle={{ textAlign: "center" }} />
             <p className={styles.p}>Fabrika 1861</p>
             <p className={styles.p}>Bavlnářská 137</p>
             <p className={styles.p}>513 01 Semily</p>

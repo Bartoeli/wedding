@@ -6,7 +6,7 @@ const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
 export const Timer: React.FC = () => {
-  const deadline = "2023-08-05 13:00:00 +2";
+  const deadline = "2023-08-05T13:00:00+02:00";
   const parsedDeadline = useMemo(() => Date.parse(deadline), [deadline]);
   const [time, setTime] = useState(parsedDeadline - Date.now());
 

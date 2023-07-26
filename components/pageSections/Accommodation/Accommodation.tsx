@@ -58,7 +58,7 @@ export const Accommodation: React.FC<AccommodationType> = ({ data }) => {
         <div style={{ marginBottom: "30px" }}>
           <p>{t(accommodation)}</p>
         </div>
-        {data?.accom !== "ne" && (
+        {data?.accom === ("sc" || "od" || "spalov") && (
           <div>
             <p>
               {t("accommodation_address")}: {t(address)}

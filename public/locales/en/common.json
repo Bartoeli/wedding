@@ -1,3 +1,60 @@
 {
-  "hello_msg": "hello"
+  "greetings_paragraph": "{{salutation}}, we are glad you will spend our wedding day with us. We believe it will be a great day full of fun, food, drinks, dancing, and an awesome party. We wish to enjoy it together until the morning. We are looking forward to seeing you and hereby send you some information that might be useful to you.",
+  "greetings_paragraph_single": "{{salutation}}, we are glad you will spend our wedding day with us. We believe it will be a great day full of fun, food, drinks, dancing, and an awesome party. We wish to enjoy it together until the morning. We are looking forward to seeing you, and hereby send you some information that might be useful to you.",
+
+  "headline_when": "When",
+  "headline_where": "Where",
+
+  "schedule_header": "Schedule",
+  "schedule_item_start": "Guests' arrival",
+  "schedule_item_ceremony": "Ceremony, congrats",
+  "schedule_item_photoshoot": "Group photoshoot",
+  "schedule_item_lunch": "Speeches, reception",
+  "schedule_more_items_title": "You can also look forward to:",
+  "schedule_more_items_title_single": "You can also look forward to:",
+  "schedule_item_cake": "Cake",
+  "schedule_item_photo_booth": "Photo booth",
+  "schedule_item_first_dance": "First dance",
+  "schedule_item_party": "Party",
+
+  "accommodation_header": "Accommodation",
+  "accommodation_general": "Accommodation is likely arranged for you. Just to be sure, please let us know so we can confirm and provide specific information.",
+  "accommodation_none_single": "We are not arranging accommodation for you, as we agreed beforehand. If there's a change and you need accommodation, please let us know.",
+  "accommodation_none": "We are not arranging accommodation for you, as we agreed beforehand. If there's a change and you need accommodation, please let us know.",
+  "accommodation_od_single": "We have a reserved room for you at Hotel Obecní dům near Fabrika. Please pay for your accommodation directly on-site. The hotel is within walking distance, but there will be a driver available all day (and night) to bring you to and from the venue as needed. You probably won't have time to check-in before the wedding, but our wedding coordinator will handle it for you.",
+  "accommodation_od": "We have reserved a room for you at Hotel Obecní dům near Fabrika. Please pay for your accommodation directly on-site. The hotel is within walking distance, but there will be a driver available all day (and night) to bring you to and from the venue as needed. You probably won't have time to check-in before the wedding, but our wedding coordinator will handle it for you.",
+  "accommodation_sc_single": "We have a reserved room for you at Sportovní centrum Semily near Fabrika. Please stop by there before arriving at the wedding to pick up the keys. Accommodation payment will be made when picking up the keys. If your room is not ready yet, you can leave your belongings there. Restrooms with showers will also be available. The accommodation is within walking distance, but there will be a driver available all day (and night) to bring you to and from the venue as needed.",
+  "accommodation_sc": "We have reserved a room for you at Sportovní centrum Semily near Fabrika. Please stop by there before arriving at the wedding to pick up the keys and make the accommodation payment. If your room is not ready yet, you can leave your belongings there. Restrooms with showers will also be available if you want to freshen up on-site. The accommodation is within walking distance, but there will be a driver available all day (and night) to bring you to and from the venue as needed.",
+  "accommodation_spalov_single": "We have reserved accommodation for you at Hotel Spálov. The hotel is outside of Semily, but there will be a driver available all day (and night) to bring you to and from the venue as needed. Please pay for the accommodation directly on-site.",
+  "accommodation_spalov": "We have reserved accommodation for you at Hotel Spálov. The hotel is outside of Semily, but there will be a driver available all day (and night) to bring you to and from the venue as needed. Please pay for the accommodation directly on-site.",
+  "accommodation_address": "Address",
+  "accommodation_address_od": "Husova 70, Semily, 513 01",
+  "accommodation_address_sc": "3. května 327, 513 01 Semily",
+  "accommodation_address_spalov": "Spálov 27, 513 01 Semily",
+  "accommodation_checkin": "Check-in: ",
+  "accommodation_checkin_od": "12:30 You can call them at +420 481 621 044 to find out if the room will be ready earlier.",
+  "accommodation_checkin_sc": "before arriving at the wedding",
+  "accommodation_checkin_spalov": "11:00",
+  "accommodation_price": "Price: ",
+  "accommodation_price_od": "Single room: 920 CZK, double room: 1,440 - 1,640 CZK, triple room: 2,010 CZK per night",
+  "accommodation_price_sc": "600 CZK per person per night",
+  "accommodation_price_spalov": "Double room: 1,200 CZK per night, suite: 2,800 CZK per night",
+
+  "parking_header": "Transportation and Parking",
+  "parking_info": "There is a large fenced parking lot right in front of the factory where you can leave your car overnight. You can reach your car from Sportovní centrum and Hotel Obecní dům by walking. If you want to be driven to your car at the venue on Sunday, we will make arrangements on-site. From Spálov, you can share the car with other guests on Saturday and Sunday or we can arrange transport for you.",
+
+  "gifts_header": "Gifts",
+  "gifts_info": "If you wish to give us a gift, we would appreciate a contribution to our honeymoon trip. We would also appreciate offers to take care of Ginny or feed the rabbit during our honeymoon.",
+
+  "what_to_wear_header": "Dresscode",
+  "what_to_wear_info": "Please wear whatever makes you comfortable and is suitable for our special day. If you want to change during the day, there will be a designated area at Fabrika. You can bring clothes to change with you or leave them in your car. We don't stick to specific colors, but if you want to make us happy, choose pastel and muted colors.",
+
+  "forbidden_header": "What to Leave at Home",
+  "forbidden_info": "Children, dogs, drugs (weed included), shorts, jeans, socks with sandals, and high heels without socks.",
+
+  "contacts_header": "Contacts",
+  "contacts_info": "Liana is helping us with on-site organization. For any inquiries on the wedding day, please contact her. Until then, the two of us are at your disposal :)",
+
+  "breakfast_header": "Sunday Breakfast",
+  "breakfast_info": "After 10:00 AM (after your checkout at the accommodation), we will gather again at the factory for a shared breakfast. We'll have mimosas (if there's any leftover prosecco), reminisce about the great and awkward moments from the previous day, and wait until we are all ready to head home safely."
 }
