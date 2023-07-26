@@ -5,6 +5,7 @@ import React from "react";
 
 import window from "../../../assets/images/window.png";
 import windows from "../../../assets/images/3windows.png";
+import moreWindows from "../../../assets/images/5windows.png";
 import styles from "./Countdown.module.scss";
 import scroll from "../../../assets/icons/scroll.gif";
 
@@ -25,6 +26,14 @@ export const Countdown: React.FC = () => {
             <Image
               alt="factory windows"
               src={windows}
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+          <div className={styles.fiveWindowsContainer}>
+            <Image
+              alt="factory windows"
+              src={moreWindows}
               fill
               style={{ objectFit: "contain" }}
             />
