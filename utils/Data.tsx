@@ -131,4 +131,10 @@ export const DATA: IDataItem[] = [
   { id: "/zdenda", salutation: "Milý Zdendo", accom: "spalov", alone: true },
   { id: "/david", salutation: "Milý Davide", accom: "spalov", alone: true },
   { id: "/lucy", salutation: "Milá Lucy", accom: "od", alone: true },
+  {
+    id: "/karlovi",
+    salutation: "Milá Jano, milý Martine",
+    accom: "ne",
+    alone: false,
+  },
 ];
