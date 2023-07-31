@@ -30,7 +30,6 @@ const Karlovi: NextPage = () => {
       <Gifts />
       <WhatToWear />
       <Forbidden />
-      <Breakfast />
       <Contacts />
       <BottomSection />
     </>
